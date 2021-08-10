@@ -1,7 +1,7 @@
 # Data Tracking System for Mosque Foodbank
 
-#Implementation
-Recipients should be a class of its own, a ViewModel of some kind should be set up as a means to interact with the Database.
+# Implementation
+Recipients should be a class of its own, a ViewModel of some kind should be set up as a means to interact with the Database. # note, I still don't understand Javascript especially vanilla.
 
 ## Problem
 
