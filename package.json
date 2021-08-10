@@ -1,0 +1,15 @@
+{
+  "name": "foodbank-tracker",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Muhammad Kamiel, Aiman Rahim",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^13.1.8",
+    "electron-reloader": "^1.2.1"
+  }
+}
