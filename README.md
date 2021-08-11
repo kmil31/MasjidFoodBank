@@ -1,5 +1,8 @@
 # Data Tracking System for Mosque Foodbank
 
+# Implementation
+Recipients should be a class of its own, a ViewModel of some kind should be set up as a means to interact with the Database. # note, I still don't understand Javascript especially vanilla.
+
 ## Problem
 
 Masjid Muadz Jabal Setiawangsa has a food bank program that provides food to the needy and hungry. Currently, they give away food to people on the noble assumption that people would only take it once a day. This is to ensure that food will go around to everyone equally. However, certain actors have found it in them to take more then a single package, potentially causing other people that might greatly need it to not receive the food.
