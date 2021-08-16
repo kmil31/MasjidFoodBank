@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wZMH3TXy/RU01IFWIwaf9vfbxzjcBpo4Y+I2WnToWpRcsgDGs+Kb9NugPLacuexed08+KoqpaoLacIuOldIRnw==",
+  "dgSpecHash": "14SN8I98QsHnr7olv0zFiyvtPSCzmGf1oju5fXoJNjL1pTaTovqI4I6hRiVMFcI2BB4cF1pO0WsDIFcdj7dTCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\deadmiel\\source\\repos\\god-does-it\\god-does-it.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\RiderProjects\\MasjidFoodBank\\god-does-it.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AIMAN RAHIM\\.nuget\\packages\\fsharp.core\\5.0.2\\fsharp.core.5.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
