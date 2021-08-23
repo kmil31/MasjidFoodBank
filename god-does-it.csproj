@@ -9,6 +9,10 @@
     <StartupObject />
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Google.Cloud.Firestore" Version="2.4.0" />
+	</ItemGroup>
+	
   <ItemGroup>
     <Compile Remove="Scripts\**" />
     <EmbeddedResource Remove="Scripts\**" />
