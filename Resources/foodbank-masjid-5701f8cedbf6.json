@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "foodbank-masjid",
+  "private_key_id": "5701f8cedbf683c507d06e914eeb85790085a958",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDqRsVb5flBpyUW\nhKjFmdm1NL7+NKLAKrzGpHj40AqMtCx0UD4G3vN20ytubY9BvAvmIaRomWXadMqX\npNeL2f036sys0r3wG2C0HReps1sdn6SiI4q39qP9mN37DSVgOYK2qv2dkFsaniIY\nP21QpJ7cp+JTcTC4WWxQdXEKGg6aiwuparFHUWtohAaI6lIamWgIQGPMFZOdJJzD\nBTGP+Y/WEunrxVaS9DOJeUBdi692EZvzlup4lLHp9K8S83ot4PcWZCvoSoYjGvk6\ncRmtAOyUowL4Q985hLwT0LcwH6KSzp9J5Nt3+ikDLHdxi7ep8TBVfEDUhFjR1tnf\n525FFBzPAgMBAAECggEAC0VmX1p8GHWDKkctm3wgZkBoY/CCV/52YJQvIcFYkJZm\ngR4PLeNyEShtsX1h5Aa5B9RchY/Dv7PYv1z15cuSDCumtzXYX4HhsCiqJ8byPkWc\n9RQCq4EZOK0vGNH0F2IM8N7fHsKAL5KmD0aV6shQwErvb5ZFgskClghgbNz+EN9C\nGVmxTnWbShP9/aL6HdQPwif4Z0OyTQ+ZqruxVEs/5WAXa8wC9oqEE+DV+sey8mVS\nJ60403yrTAct1jSJE+m60APzRYSoHdavnGcBjdQy6oaQcY614mC4KQQZuSZooJbj\nTVvbZElvkyodqc2b4gp2JxwRnxC2J1lgVw0tkFvjSQKBgQD6b+tAzEXJC9RRqdv6\nzimuXXTAJFw3F4lq1qfV5h/5Cr9MhMZeOjHg1PiHEC9bAyMu0oj9rz0WWMNeMZ6U\nNqbNXu2OCeImO0OdIJqGAwKJya4I2x/Kq23oMoPi4oZuznINsVxsW/tyWMhnV4dD\nylY4U935CoL39qvdo6ZGHD0bpQKBgQDvevS1kCmdWo1wDNnpItn1aD1YNVDSG708\nnRdyPG/HnxPlL4Gg24V1qsRJnMsEd3TWHHodHqKlqNy5bMpHmponoFe9fu5fN0N4\nwTUB2w3VS+7PEmk4b1lxakAvN+jJ+S0UdUhP63SyjqXsi776Mb6D75NXXf4IG5d7\n1dQlhIz8YwKBgCMxu0Pd8SixyuK3Fj0G4ACrDY87DOKJIjyrceazcmbTRdMBDceM\nMhpAk7SXZ7BInpcj6zCLgfA0BTCllH2LuKE/5+6AIRHyXiwkutJ+dcrbVuPTt4IJ\n2WY6QyKNZwsHZCvccvqfapTFOVScjlvOgZNk5drryUADoF+DcgiES2opAoGAZmvi\nzug6NBcvWJXWeNQz/bY4Tkp3J3U/qPXSukPI1spdWu7HdQGOAbYoPwd0+JMSgCQr\nwdqBW3Jt/Evf82HWvk3gWKY50rUzASk4v3NtZiUUnLFWGRHeYhg8HTW/NOqB8jb6\n11tvTJKfuhxGcIDn50uGa55CcDtEvWzFT8px9dsCgYEAlpJ9VS1ll1XSZrfzXuwf\nRH8gbVDNgIxGxcYChwcvPonlha0AMbs2K7Mbw5S+dOsppCkXuF2IN/ml5nndv7Ub\n+mVdaBeWv8ix08UaxpPRViKkfqopYA+VWm83yi+ePKq+VohAD1yQTr/Oy+yIZWGu\n/dmV452E1WcBVMe/wYFJzNU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "foodbank-masjid@appspot.gserviceaccount.com",
+  "client_id": "113600367084688866812",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/foodbank-masjid%40appspot.gserviceaccount.com"
+}
