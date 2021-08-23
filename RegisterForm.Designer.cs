@@ -37,6 +37,8 @@ namespace god_does_it
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.submitRegistrationBtn = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -57,9 +59,11 @@ namespace god_does_it
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox2.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Location = new System.Drawing.Point(39, 112);
+            this.textBox2.HideSelection = false;
+            this.textBox2.Location = new System.Drawing.Point(39, 120);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -71,9 +75,10 @@ namespace god_does_it
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox3.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Location = new System.Drawing.Point(39, 203);
+            this.textBox3.Location = new System.Drawing.Point(39, 174);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -106,7 +111,7 @@ namespace god_does_it
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(39, 243);
+            this.textBox6.Location = new System.Drawing.Point(39, 201);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(195, 23);
@@ -140,12 +145,37 @@ namespace god_does_it
             this.submitRegistrationBtn.UseVisualStyleBackColor = false;
             this.submitRegistrationBtn.Click += new System.EventHandler(this.submitRegistrationBtn_Click);
             // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(39, 255);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(195, 23);
+            this.textBox8.TabIndex = 10;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox9.Enabled = false;
+            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox9.ForeColor = System.Drawing.SystemColors.Control;
+            this.textBox9.Location = new System.Drawing.Point(39, 228);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(195, 23);
+            this.textBox9.TabIndex = 9;
+            this.textBox9.Text = "Telephone Number";
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(649, 518);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.submitRegistrationBtn);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -174,5 +204,7 @@ namespace god_does_it
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button submitRegistrationBtn;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }

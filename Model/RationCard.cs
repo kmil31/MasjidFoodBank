@@ -6,7 +6,7 @@ namespace god_does_it.Model
 {
     class RationCard
     {
-        private List<DateTime> DatesReceived;
+        private List<DateTime> DatesReceived = null;
 
 
 

@@ -10,6 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Scripts\**" />
+    <EmbeddedResource Remove="Scripts\**" />
+    <None Remove="Scripts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FSharp.Core" Version="5.0.2" />
   </ItemGroup>
 
@@ -26,14 +32,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Scripts\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\FSharpTest\FSharpTest.fsproj" />
   </ItemGroup>
 
 </Project>

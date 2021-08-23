@@ -59,19 +59,6 @@
             "outputPath": "FSharp.Core.xml"
           }
         }
-      },
-      "FSharpTest/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
-        "dependencies": {
-          "FSharp.Core": "5.0.0"
-        },
-        "compile": {
-          "bin/placeholder/FSharpTest.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FSharpTest.dll": {}
-        }
       }
     }
   },
@@ -103,17 +90,11 @@
         "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll"
       ]
-    },
-    "FSharpTest/1.0.0": {
-      "type": "project",
-      "path": "../FSharpTest/FSharpTest.fsproj",
-      "msbuildProject": "../FSharpTest/FSharpTest.fsproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "FSharp.Core >= 5.0.2",
-      "FSharpTest >= 1.0.0"
+      "FSharp.Core >= 5.0.2"
     ]
   },
   "packageFolders": {
@@ -147,11 +128,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "D:\\RiderProjects\\FSharpTest\\FSharpTest.fsproj": {
-              "projectPath": "D:\\RiderProjects\\FSharpTest\\FSharpTest.fsproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

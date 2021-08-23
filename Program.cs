@@ -14,7 +14,6 @@ namespace god_does_it
         [STAThread]
         static void Main()
         {
-            var db = FakeDatabase.Instance;
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
