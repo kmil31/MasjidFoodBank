@@ -16,16 +16,4 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <None Include="$(NuGetPackageRoot)fsharp.core\5.0.2\contentFiles\any\netstandard2.0\FSharp.Core.xml" Condition="Exists('$(NuGetPackageRoot)fsharp.core\5.0.2\contentFiles\any\netstandard2.0\FSharp.Core.xml')">
-      <NuGetPackageId>FSharp.Core</NuGetPackageId>
-      <NuGetPackageVersion>5.0.2</NuGetPackageVersion>
-      <NuGetItemType>None</NuGetItemType>
-      <Pack>false</Pack>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <TargetPath>FSharp.Core.xml</TargetPath>
-      <Private>True</Private>
-      <Link>FSharp.Core.xml</Link>
-    </None>
-  </ItemGroup>
 </Project>
