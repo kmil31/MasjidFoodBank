@@ -9,6 +9,7 @@ namespace god_does_it
         public String Name { get; set; }
         public String IdNumber { get; set; }
         public String Address { get; set; }
+        public String PhoneNumber { get; set; }
         private Boolean HasReceived { get; set; }
         private List<String> DatesReceived;
       
