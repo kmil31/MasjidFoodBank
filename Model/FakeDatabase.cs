@@ -19,6 +19,10 @@ namespace god_does_it.Model
             
         }
 
+        public static void sendData()
+        {
+
+        }
 
         private static List<Recipient> recipients = new List<Recipient>();
 

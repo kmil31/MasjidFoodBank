@@ -33,12 +33,13 @@ namespace god_does_it
             }
             else
             {
-                FakeDatabase.AddtoListRecipients(textBox5.Text, textBox6.Text, textBox7.Text);
-                var list = FakeDatabase.GetRecipients();
-                foreach (Recipient person in list)
+                Firebase.CreateDocument(textBox5.Text, textBox6.Text, textBox7.Text);
+/*                var list = FakeDatabase.GetRecipients();
+*/                /*foreach (Recipient person in list)
                 {
                     Console.WriteLine(person.Name + " " + person.IdNumber + " " + person.Address);
-                }
+                }*/
+                
                 textBox5.Text = null;
                 textBox6.Text = null;
                 textBox7.Text = null;
