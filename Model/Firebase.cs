@@ -31,19 +31,34 @@ namespace god_does_it.Model
             db = FirestoreDb.Create("foodbank-masjid");
         }
 
-        public static void CreateDocument(string name, string IC, string address)
+        public static Boolean CreateDocument(string name, string IC, string address, string phone_number)
         {
+            const bool COMPLETED = true;
+            const bool NOT_COMPLETED = false;
+            bool completed; 
             string DateOfRegistration = DateTime.Today.ToShortDateString();
             DocumentReference Doc = db.Collection("users").Document(IC);
             Dictionary<string, object> data1 = new Dictionary<string, object>()
             {
-                {"name",name },
-                {"address",address },
-                {"date", DateOfRegistration }
+                {"Name",name },
+                {"Address",address },
+                {"Date", DateOfRegistration },
+                {"Phone Number", phone_number }
             };
 
-            Doc.SetAsync(data1).Wait();
-            Console.WriteLine("Success");
+           
+            Doc.SetAsync(data1).ContinueWith(task => {
+                if (task.IsCompleted) {
+                    completed = COMPLETED;
+                }
+                else
+                {
+                    completed = NOT_COMPLETED;
+                }
+                return completed;
+            });
+            return false;
+            
         }
 
         public static Boolean CheckDatabase(String IC)
@@ -55,6 +70,7 @@ namespace god_does_it.Model
         {
             //implement an Async Function that connects to online DB and registers user
         }
+        
 
 
 

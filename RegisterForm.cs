@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using god_does_it.Model;
 
@@ -26,23 +27,23 @@ namespace god_does_it
         private void submitRegistrationBtn_Click(object sender, EventArgs e)
         {
             //need to check validity of data
-            if(CheckValidity(textBox5.Text, textBox6.Text, textBox7.Text) == false)
+            if(CheckValidity(NameBox.Text, ICBox.Text, AddressBox.Text,ContactNumberBox.Text) == false)
             {
                 MessageBox.Show("Make sure IC or Name is properly put. Address is optional ", "Data Input Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                Firebase.CreateDocument(textBox5.Text, textBox6.Text, textBox7.Text);
-/*                var list = FakeDatabase.GetRecipients();
-*/                /*foreach (Recipient person in list)
+                var completed = Firebase.CreateDocument(NameBox.Text, ICBox.Text, AddressBox.Text,ContactNumberBox.Text);
+                if (completed)
                 {
-                    Console.WriteLine(person.Name + " " + person.IdNumber + " " + person.Address);
-                }*/
-                
-                textBox5.Text = null;
-                textBox6.Text = null;
-                textBox7.Text = null;
+                    MessageBox.Show("Data Sent");
+                }
+                MessageBox.Show("Data Sent");
+                NameBox.Text = null;
+                ICBox.Text = null;
+                AddressBox.Text = null;
+                ContactNumberBox.Text = null;
             }
             
 
@@ -53,7 +54,7 @@ namespace god_does_it
 
         }
 
-        private Boolean CheckValidity(String name, String IC, String Address)
+        private Boolean CheckValidity(String name, String IC, String Address,String PhoneNum)
         {
             if(String.IsNullOrWhiteSpace(name))
             {
@@ -65,6 +66,13 @@ namespace god_does_it
                 Console.WriteLine("No IC value");
                 return false;
 
+            }
+            else if(!Regex.IsMatch(IC, @"^[Z0-9]+$")){
+                return false;
+            }
+            else if(!Regex.IsMatch(PhoneNum, @"^[Z0-9]+$"){
+               /* MessageBox.Show()*/
+                return false;
             }
             else { return true; }
         }
