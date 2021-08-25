@@ -32,6 +32,7 @@ namespace god_does_it
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.htmlPanel1 = new TheArtOfDev.HtmlRenderer.WinForms.HtmlPanel();
             this.SuspendLayout();
             // 
             // textBox1
@@ -70,12 +71,27 @@ namespace god_does_it
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // htmlPanel1
+            // 
+            this.htmlPanel1.AutoScroll = true;
+            this.htmlPanel1.AutoScrollMinSize = new System.Drawing.Size(568, 20);
+            this.htmlPanel1.BackColor = System.Drawing.SystemColors.Window;
+            this.htmlPanel1.BaseStylesheet = null;
+            this.htmlPanel1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.htmlPanel1.Location = new System.Drawing.Point(39, 180);
+            this.htmlPanel1.Name = "htmlPanel1";
+            this.htmlPanel1.Size = new System.Drawing.Size(568, 326);
+            this.htmlPanel1.TabIndex = 4;
+            this.htmlPanel1.Text = "htmlPanel1";
+            this.htmlPanel1.Click += new System.EventHandler(this.htmlPanel1_Click);
+            // 
             // SearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(649, 518);
+            this.Controls.Add(this.htmlPanel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -94,5 +110,6 @@ namespace god_does_it
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
+        private TheArtOfDev.HtmlRenderer.WinForms.HtmlPanel htmlPanel1;
     }
 }
