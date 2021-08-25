@@ -386,3 +386,6 @@ FodyWeavers.xsd
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+ god-does-it/DesignTimeBuild
+ god-does-it/v16

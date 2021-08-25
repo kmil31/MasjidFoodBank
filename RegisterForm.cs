@@ -61,16 +61,16 @@ namespace god_does_it
                 Console.WriteLine("False");
                 return false;
             }
-            else if (String.IsNullOrWhiteSpace(IC))
+            if (String.IsNullOrWhiteSpace(IC))
             {
                 Console.WriteLine("No IC value");
                 return false;
 
             }
-            else if(!Regex.IsMatch(IC, @"^[Z0-9]+$")){
+            if(!Regex.IsMatch(IC, @"^[Z0-9]+$")){
                 return false;
             }
-            else if(!Regex.IsMatch(PhoneNum, @"^[Z0-9]+$"){
+            if(!Regex.IsMatch(PhoneNum, @"^[Z0-9]+$")){
                /* MessageBox.Show()*/
                 return false;
             }
