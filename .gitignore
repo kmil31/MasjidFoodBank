@@ -387,5 +387,7 @@ FodyWeavers.xsd
 .idea/
 *.sln.iml
 
- god-does-it/DesignTimeBuild
- god-does-it/v16
+/god-does-it/DesignTimeBuild
+/god-does-it/v16
+/Resources/foodbank-masjid-5701f8cedbf6.json
+/obj/*
