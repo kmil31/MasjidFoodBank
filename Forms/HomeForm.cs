@@ -30,6 +30,7 @@ namespace god_does_it
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             openChildForm(new SearchForm());
 
         }
@@ -41,6 +42,7 @@ namespace god_does_it
         private Form activeForm = null;
         private void openChildForm(Form childForm)
         {
+        
             if (activeForm != null)
             {
                 activeForm.Close();

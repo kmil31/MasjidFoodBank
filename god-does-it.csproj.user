@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="HomeForm.cs">
+    <Compile Update="Forms\HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="RegisterForm.cs">
+    <Compile Update="Forms\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SearchForm.cs">
+    <Compile Update="Forms\SearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
