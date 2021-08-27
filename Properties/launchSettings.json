@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "god-does-it": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "D:\\RiderProjects\\MasjidFoodBank\\Resources\\foodbank-masjid-5701f8cedbf6.json"
+      }
+    }
+  }
+}
