@@ -22,6 +22,7 @@
   <ItemGroup>
     <PackageReference Include="HtmlRenderer.Core" Version="1.5.0.6" />
     <PackageReference Include="HtmlRenderer.WinForms" Version="1.5.0.6" />
+    <PackageReference Include="MetroSet_UI" Version="2.0.0" />
     <PackageReference Include="Realm" Version="10.3.0" />
   </ItemGroup>
 
