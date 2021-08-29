@@ -48,6 +48,7 @@ namespace god_does_it
             this.textBox1.Size = new System.Drawing.Size(166, 30);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Search";
+
             // 
             // textBox2
             // 

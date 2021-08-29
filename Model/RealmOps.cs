@@ -16,30 +16,46 @@ namespace god_does_it.Model
         static RealmOps() { }
         Realm realm = Realm.GetInstance();
 
-        public bool createNewObject(string name, string ic, string tele, string address)
+
+        public bool createNewObject(string name, string ic, string tele, string address,string date)
         {
             
             try
             {
                 realm.Write(() =>
                 {
-                    realm.Add(new User()
-                    {
-                        Name = name,
-                        IC = ic,
-                        Telephone = tele,
-                        Address = address,
 
-                    }); ;
+                    var user = new User();
+
+                    user.Name = name;
+                    user.IC = ic;
+                    user.Telephone = tele;
+                    user.Address = address;
+                    user.Dates.Add(date);
+                    realm.Add(user);
 
                 }
                     );
-                MessageBox.Show("Data successfuly entered");
+                MessageBox.Show("Data successfully entered");
                 return true;
             }
             catch (Realms.Exceptions.RealmDuplicatePrimaryKeyValueException)
             {
-                MessageBox.Show("Duplicate Primary Key nigga");
+                var thisUser = realm.Find<User>(ic);
+                if (thisUser.Dates.Contains(date))
+                {
+                    MessageBox.Show("You cannot take food again for today! Come again tomorrow!");
+                }
+                else
+                {
+
+                    realm.Write(() =>
+                    {
+                        thisUser.Dates.Add(date);
+                    });
+                    MessageBox.Show("User already registed, added a new date");
+                    return true;
+                }
                 return false;
             }
         }
@@ -53,9 +69,14 @@ namespace god_does_it.Model
             foreach(var x in oldDogs)
             Console.WriteLine(x);                                                                                     
             return oldDogs.FirstOrDefault() ;
-                
+        }       
 
-            
+
+        public User searchUser(string ic)
+        {
+            var specificUser = realm.Find<User>(ic);
+            return specificUser;
         }
+
     }
 }

@@ -35,7 +35,7 @@ namespace god_does_it
             }
             else
             {
-                if(realmops.createNewObject(NameBox.Text, ICBox.Text,  ContactNumberBox.Text, AddressBox.Text))
+                if(realmops.createNewObject(NameBox.Text, ICBox.Text,  ContactNumberBox.Text, AddressBox.Text,DateTime.Now.ToString("dd MMMM yyyy")))
                 {
                     NameBox.Text = null;
                     ICBox.Text = null;
