@@ -17,7 +17,6 @@ namespace god_does_it
         [STAThread]
         static void Main()
         {
-          
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

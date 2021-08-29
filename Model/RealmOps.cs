@@ -5,6 +5,9 @@ using Realms;
 using god_does_it.Model;
 using god_does_it.Resources.Models;
 using System.Windows.Forms;
+using System.Threading.Tasks;
+using System.Linq;
+using System.Collections;
 
 namespace god_does_it.Model
 {
@@ -56,6 +59,17 @@ namespace god_does_it.Model
                 return false;
             }
         }
+        
+        public User QueryUserData(String IC)
+        {
+            var oldDogs =   from user in realm.All<User>()
+                                         where user.IC.Equals(IC)
+                                         select user;
+
+            foreach(var x in oldDogs)
+            Console.WriteLine(x);                                                                                     
+            return oldDogs.FirstOrDefault() ;
+        }       
 
 
         public User searchUser(string ic)

@@ -41,31 +41,31 @@ namespace god_does_it
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(45, 45);
+            this.textBox1.Location = new System.Drawing.Point(39, 34);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(190, 37);
+            this.textBox1.Size = new System.Drawing.Size(166, 30);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Search";
-         
+
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(45, 153);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(11, 13, 11, 13);
-            this.textBox2.MaximumSize = new System.Drawing.Size(799, 132);
+            this.textBox2.Location = new System.Drawing.Point(39, 115);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.textBox2.MaximumSize = new System.Drawing.Size(700, 100);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(550, 29);
+            this.textBox2.Size = new System.Drawing.Size(562, 23);
             this.textBox2.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(509, 201);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(526, 151);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 31);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -74,29 +74,29 @@ namespace god_does_it
             // htmlPanel1
             // 
             this.htmlPanel1.AutoScroll = true;
-            this.htmlPanel1.AutoScrollMinSize = new System.Drawing.Size(550, 25);
+            this.htmlPanel1.AutoScrollMinSize = new System.Drawing.Size(562, 20);
             this.htmlPanel1.BackColor = System.Drawing.SystemColors.Window;
             this.htmlPanel1.BaseStylesheet = null;
             this.htmlPanel1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.htmlPanel1.Location = new System.Drawing.Point(45, 240);
-            this.htmlPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.htmlPanel1.Location = new System.Drawing.Point(39, 180);
             this.htmlPanel1.Name = "htmlPanel1";
-            this.htmlPanel1.Size = new System.Drawing.Size(550, 435);
+            this.htmlPanel1.Size = new System.Drawing.Size(562, 326);
             this.htmlPanel1.TabIndex = 4;
             this.htmlPanel1.Text = "htmlPanel1";
             this.htmlPanel1.Click += new System.EventHandler(this.htmlPanel1_Click);
             // 
             // SearchForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(742, 691);
+            this.ClientSize = new System.Drawing.Size(648, 518);
             this.Controls.Add(this.htmlPanel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.MinimumSize = new System.Drawing.Size(757, 727);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(664, 555);
             this.Name = "SearchForm";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.SearchForm_Load);
