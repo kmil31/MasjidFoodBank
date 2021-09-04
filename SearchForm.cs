@@ -39,9 +39,13 @@ namespace god_does_it
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Hello_World = textBox2.Text;
-            htmlPanel1.Text = GenerateNewHTML(textBox2.Text).Result;
+
+            htmlPanel1.Text = Task.Run(async () => {
+                RealmOps realmStuff = new RealmOps();
+                return GenerateNewHTML(realmStuff.QueryUserData(textBox2.Text));}).Result;
             textBox2.Text = null;
+          
+            
 
         }
 
@@ -49,60 +53,54 @@ namespace god_does_it
         {
 
         }
-        async private Task<string> GenerateNewHTML(string x)
+        private string GenerateNewHTML(User user)
         {
             var IC = String.Empty;
             var Telephone = String.Empty;
+            var Address = String.Empty;
+            var table = String.Empty;
+            var temp = String.Empty;
             string htmltext2 = string.Empty;
-            var d = await Task.Run(() =>
+            if (user != null)
             {
-                RealmOps realmops = new RealmOps();
-                return realmops.QueryUserData(x);
-            }).ConfigureAwait(false) ;
-            /*RealmOps realmops = new RealmOps();
-            User d = realmops.QueryUserData(x);*/
-            if (d == null)
-            {
-                Console.WriteLine(d);
-            }
-            else
-            {
-                var Name = d.Name.Equals(null) ? "Unavailable" : d.Name;
-                var Address = d.Address.Equals(null) ? "Unavailable" : d.Address;
-                IC = d.IC.Equals(null) ? "Unavailable" : d.IC;
-                Telephone = d.Telephone.Equals(null) ? "Unavailable" : d.Telephone;
+                foreach (var x in user.Dates)
+                {
+                    temp = "<tr>" + "<td>" + x + "</td>" + "</tr>";
+                    table += temp;
+                }
+
+                /*RealmOps realmops = new RealmOps();
+                User d = realmops.QueryUserData(x);*/
                 htmltext2 = $@"
             <style>
                 h1 {{ text-align:center; }}
                 body {{ background-color : #1abc9c; }}
             </style>
             <body>
-                <p><h1>{Name}</h1></p></br>
+                <p><h1>{Name = user.Name}</h1></p></br>
                 <div>
-                    Address : {Address} </br>
-                    IC      : {IC}</br>
-                    Phone Number:{Telephone} </br>
+                    Address : {Address = user.Address} </br>
+                    IC      : {IC = user.IC}</br>
+                    Phone Number:{Telephone = user.Telephone} </br>
+                </div>
+                <div>
+                    <table>
+                        {table}
+                    </table>
                 </div>
             </body>";
             }
-/*
-            htmltext2 = $@"
-            <style>
-                h1 {{ text-align:center; }}
-                body {{ background-color : #1abc9c; }}
-            </style>
-            <body>
-                <p><h1></h1></p></br>
-                <div>
-                    Address : {Name} </br>
-                    IC      : {IC}</br>
-                    Phone Number:{Telephone} </br>
-                </div>
-            </body>";*/
-        
+            
+
+
             return htmltext2;
-        
+
 
         }
+
+
+
+
     }
 }
+
