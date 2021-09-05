@@ -8,9 +8,25 @@
     <ApplicationIcon />
     <StartupObject />
   </PropertyGroup>
+	
+  <ItemGroup>
+    <Compile Remove="Scripts\**" />
+    <EmbeddedResource Remove="Scripts\**" />
+    <None Remove="Scripts\**" />
+  </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FSharp.Core" Version="5.0.2" />
+    <None Remove="C:\Users\AIMAN RAHIM\.nuget\packages\fsharp.core\5.0.2\contentFiles\any\netstandard2.0\FSharp.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlRenderer.Core" Version="1.5.0.6" />
+    <PackageReference Include="HtmlRenderer.WinForms" Version="1.5.0.6" />
+    <PackageReference Include="Realm" Version="10.3.0" />
+    <PackageReference Include="Realm.Fody" Version="10.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -26,14 +42,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Scripts\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\FSharpTest\FSharpTest.fsproj" />
   </ItemGroup>
 
 </Project>

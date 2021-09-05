@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace god_does_it
 {
+
     public partial class HomeForm : Form
     {
         public HomeForm()
