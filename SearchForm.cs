@@ -40,9 +40,7 @@ namespace god_does_it
         {
 
 
-            htmlPanel1.Text = Task.Run(async () => {
-                RealmOps realmStuff = new RealmOps();
-                return GenerateNewHTML(realmStuff.QueryUserData(textBox2.Text));}).Result;
+            htmlPanel1.Text = GenerateNewHTML(realmops.QueryUserData(textBox2.Text));
             textBox2.Text = null;
           
             
@@ -61,7 +59,7 @@ namespace god_does_it
             var table = String.Empty;
             var temp = String.Empty;
             string htmltext2 = string.Empty;
-            if (user != null)
+            if (user.Dates != null)
             {
                 foreach (var x in user.Dates)
                 {
